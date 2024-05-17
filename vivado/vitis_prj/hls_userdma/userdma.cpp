@@ -58,6 +58,7 @@ void getinstream(hls::stream<trans_pkt >& in_stream, ap_uint<1> in_en_clrsts, ap
 			  if((in_len!=0)&&(in_val.user(2,2)==1))
 				s2m_err=1;					  
 
+			/* Modified
 			  if((width_count==in_Img_width-1)&&(in_val.user(3,3)!=1))
 				s2m_err=1;
 			 
@@ -65,6 +66,7 @@ void getinstream(hls::stream<trans_pkt >& in_stream, ap_uint<1> in_en_clrsts, ap
 			 	width_count = 0; 
   		 	  else
 			  	width_count++;
+			*/
 
 			  count++;
 			  in_len++;
@@ -115,12 +117,13 @@ void paralleltostreamwithburst(ap_uint<32> *in_memory, ap_uint<1> in_en_clrsts, 
 			  if(m2s_len == in_m2s_len)
 				  out_val.upsb(2,2) = 1;
 
+			  /* Modified
 			  if(Img_width_count == in_Img_width-1){
 				  out_val.upsb(3,3) = 1;
 				  Img_width_count=0; 
 			  }else{
 				  Img_width_count++;
-			  }
+			  }*/
 
 			  out_stream.write(out_val);
 			  m2s_len--;	

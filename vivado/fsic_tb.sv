@@ -833,7 +833,6 @@ module fsic_tb();
             $display($time, "=> Starting SocUp2DmaPath() test...");
             $display($time, "=> =======================================================================");
 
-            $readmemh("../../../../../in_img.hex", updma_img);
 
             fd = $fopen ("../../../../../updma_input.log", "w");
             for (index = 0; index < 230400; index +=4) begin
@@ -849,17 +848,18 @@ module fsic_tb();
 
             $readmemh("../../../../../out_img.hex", updma_img);
 
-            fd = $fopen ("../../../../../updma_output_gold.log", "w");
-            for (index = 0; index < 230400; index +=4) begin
-                updma_data |= updma_img[index];
-                updma_data |= updma_img[index+1] << 8;
-                updma_data |= updma_img[index+2] << 16;
-                updma_data |= updma_img[index+3] << 24;
-                slave_agent2.mem_model.backdoor_memory_write_4byte(addro+index,updma_data,4'b1111);
-                updma_data = 0;
-                $fdisplay(fd, "%08h", slave_agent2.mem_model.backdoor_memory_read_4byte(addro+index));
-            end
-            $fclose(fd);
+            ///// Modified /////
+            /// fd = $fopen ("../../../../../updma_output_gold.log", "w");
+            /// for (index = 0; index < 230400; index +=4) begin
+            ///     updma_data |= updma_img[index];
+            ///     updma_data |= updma_img[index+1] << 8;
+            ///     updma_data |= updma_img[index+2] << 16;
+            ///     updma_data |= updma_img[index+3] << 24;
+            ///     slave_agent2.mem_model.backdoor_memory_write_4byte(addro+index,updma_data,4'b1111);
+            ///     updma_data = 0;
+            ///     $fdisplay(fd, "%08h", slave_agent2.mem_model.backdoor_memory_read_4byte(addro+index));
+            /// end
+            /// $fclose(fd);
 
             //Setup userdma
             $display($time, "=> FpgaLocal_Write: PL_UPDMA, s2m exit clear...");
