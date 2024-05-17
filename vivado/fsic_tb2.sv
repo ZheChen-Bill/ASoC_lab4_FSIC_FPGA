@@ -39,7 +39,7 @@ integer index, fd;
 event system_reset_event, peripheral_reset_event, caravel_reset_event, fw_worked_event, is_txen_event, ladma_done, error_event;
 event fw_mb_st_event, fw_mb_wd_event, userdma_done;
 
-module fsic_tb();
+module fsic_tb2();
 
     localparam  ReadCyc = 1'b0;
     localparam  WriteCyc = 1'b1;
@@ -854,7 +854,7 @@ module fsic_tb();
             for (index = 0; index < 64; index +=1) begin
                 updma_data = index;
                 slave_agent3.mem_model.backdoor_memory_write_4byte(addri+index*4,updma_data,4'b1111);
-                $fdisplay(fd, "%08h", slave_agent3.mem_model.backdoor_memory_read_4byte(addr+index*4));
+                $fdisplay(fd, "%08h", slave_agent3.mem_model.backdoor_memory_read_4byte(addri+index*4));
             end
             $fclose(fd);
 
@@ -1051,7 +1051,7 @@ module fsic_tb();
             offset = 0;
             while (1) begin
                 axil_cycles_gen(ReadCyc, SOC_UP, offset, data, 1);
-                if(data & 32'h0000_0004 == 32'h0000_0004) begin
+                if((data[2]) == 1'b1) begin
                     $display($time, "=> Fpga2Soc_Write SOC_UP offset %h = %h, PASS", offset, data);
                     break;
                 end else begin
@@ -1147,7 +1147,7 @@ module fsic_tb();
 
                     fd = $fopen ("../../../../../updma_output.log", "w");
                     for (index = 0; index < 64; index +=1) begin
-                        $fdisplay(fd, "%08h", slave_agent2.mem_model.backdoor_memory_read_4byte(addro+index*4));
+                        $fdisplay(fd, "%d", slave_agent2.mem_model.backdoor_memory_read_4byte(addro+index*4));
                     end
 
                     $fclose(fd);

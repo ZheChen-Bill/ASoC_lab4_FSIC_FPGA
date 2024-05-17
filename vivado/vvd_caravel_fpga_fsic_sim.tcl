@@ -50,6 +50,9 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axis_switch/rtl/sw_caravel.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/user_prj0.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/user_prj1.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/fir.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/bram11.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/multiplier_adder.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj2/rtl/user_prj2.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj3/rtl/user_prj3.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/rtl/user_project_wrapper.v"]"\
@@ -84,7 +87,7 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/header/defines.v"]"\
  "[file normalize "$origin_dir/fsic_defines.v"]"\
  "[file normalize "$origin_dir/fsic.coe"]"\
- "[file normalize "$origin_dir/fsic_tb.sv"]"\
+ "[file normalize "$origin_dir/fsic_tb2.sv"]"\
  "[file normalize "$origin_dir/fsic_tb_behav.wcfg"]"\
   ]
   foreach ifile $files {
@@ -98,7 +101,7 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/[file normalize "$origin_dir/vitis_prj/hls_caravel_ps"]"]"\
  "[file normalize "$origin_dir/[file normalize "$origin_dir/vitis_prj/hls_output_pin"]"]"\
  "[file normalize "$origin_dir/[file normalize "$origin_dir/vitis_prj/hls_read_romcode"]"]"\
- "[file normalize "$origin_dir/[file normalize "$origin_dir/vitis_prj/hls_userdma"]"]"\
+ "[file normalize "$origin_dir/[file normalize "$origin_dir/vitis_prj/userdma_fir"]"]"\
   ]
   foreach ipath $paths {
     if { ![file isdirectory $ipath] } {
@@ -226,7 +229,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 # Set IP repository paths
 set obj [get_filesets sources_1]
 if { $obj != {} } {
-   set_property "ip_repo_paths" "[file normalize "$origin_dir/vitis_prj/hls_caravel_ps"] [file normalize "$origin_dir/vitis_prj/hls_output_pin"] [file normalize "$origin_dir/vitis_prj/hls_read_romcode"] [file normalize "$origin_dir/vitis_prj/hls_userdma"]" $obj
+   set_property "ip_repo_paths" "[file normalize "$origin_dir/vitis_prj/hls_caravel_ps"] [file normalize "$origin_dir/vitis_prj/hls_output_pin"] [file normalize "$origin_dir/vitis_prj/hls_read_romcode"] [file normalize "$origin_dir/vitis_prj/userdma_fir"]" $obj
 
    # Rebuild user ip_repo's index before adding any source files
    update_ip_catalog -rebuild
@@ -265,6 +268,9 @@ set files [list \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/axis_switch/rtl/sw_caravel.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/user_prj0.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/user_prj1.v"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/fir.v"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/bram11.v"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/multiplier_adder.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj2/rtl/user_prj2.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj3/rtl/user_prj3.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/rtl/user_project_wrapper.v"] \
@@ -380,13 +386,13 @@ if {[string equal [get_filesets -quiet sim_1] ""]} {
 # Set 'sim_1' fileset object
 set obj [get_filesets sim_1]
 set files [list \
- [file normalize "${origin_dir}/fsic_tb.sv"] \
+ [file normalize "${origin_dir}/fsic_tb2.sv"] \
  [file normalize "${origin_dir}/fsic_tb_behav.wcfg"] \
 ]
 add_files -norecurse -fileset $obj $files
 
 # Set 'sim_1' fileset file properties for remote files
-set file "$origin_dir/fsic_tb.sv"
+set file "$origin_dir/fsic_tb2.sv"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sim_1] [list "*$file"]]
 set_property -name "file_type" -value "SystemVerilog" -objects $file_obj
@@ -399,7 +405,7 @@ set_property -name "used_in_implementation" -value "0" -objects $file_obj
 
 # Set 'sim_1' fileset properties
 set obj [get_filesets sim_1]
-set_property -name "top" -value "fsic_tb" -objects $obj
+set_property -name "top" -value "fsic_tb2" -objects $obj
 set_property -name "top_auto_set" -value "0" -objects $obj
 set_property -name "top_lib" -value "xil_defaultlib" -objects $obj
 set_property -name "verilog_define" -value "USER_PROJECT_SIDEBAND_SUPPORT=1 USE_EDGEDETECT_IP=1 pSERIALIO_WIDTH=13" -objects $obj
@@ -605,7 +611,7 @@ proc cr_bd_design_1 { parentCell } {
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
   set_property -dict [ list \
    CONFIG.Byte_Size {8} \
-CONFIG.Coe_File {/ADATA2T/home/tonyho/workspace/test/fsic_fpga/vivado/fsic.coe} \
+CONFIG.Coe_File {/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/fsic.coe} \
    CONFIG.EN_SAFETY_CKT {true} \
    CONFIG.Enable_32bit_Address {true} \
    CONFIG.Enable_A {Use_ENA_Pin} \
