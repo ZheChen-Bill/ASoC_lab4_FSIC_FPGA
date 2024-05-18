@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1715781346559">
-  <ports id="1" name="outbuf" type="PortType" coreId="1058538176" bitwidth="40" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716049464107">
+  <ports id="1" name="outbuf" type="PortType" coreId="225" bitwidth="40" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="outcount48" type="PortType" coreName="FIFO" coreId="0" bitwidth="32" iftype="IfTypeRom">
+  <ports id="2" name="outcount41" type="PortType" coreName="FIFO" coreId="0" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="3" name="in_en_clrsts" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="1" iftype="IfTypeRom">
@@ -19,16 +19,16 @@
   <ports id="6" name="outStreamTop_V_data_V" type="PortType" coreId="0" bitwidth="32" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="7" name="outStreamTop_V_keep_V" type="PortType" coreId="1059270192" bitwidth="4" direction="DirOut">
+  <ports id="7" name="outStreamTop_V_keep_V" type="PortType" coreId="3341252208" bitwidth="4" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="8" name="outStreamTop_V_strb_V" type="PortType" coreId="1059148592" bitwidth="4" direction="DirOut">
+  <ports id="8" name="outStreamTop_V_strb_V" type="PortType" coreId="3341161152" bitwidth="4" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="9" name="outStreamTop_V_user_V" type="PortType" coreId="1058967632" bitwidth="7" direction="DirOut">
+  <ports id="9" name="outStreamTop_V_user_V" type="PortType" coreId="3340871056" bitwidth="7" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="10" name="outStreamTop_V_last_V" type="PortType" coreId="1059148592" bitwidth="1" direction="DirOut">
+  <ports id="10" name="outStreamTop_V_last_V" type="PortType" coreId="1663070068" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
   <edges id="49" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -79,7 +79,7 @@
   <edges id="225" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.5"/>
   <blocks id="20" name="entry" type="BlockType">
     <controlOutputObjs>if.then</controlOutputObjs>
-    <controlOutputObjs>VITIS_LOOP_149_2.preheader</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_152_2.preheader</controlOutputObjs>
     <node_objs xsi:type="cdfg:CdfgNode" id="11" name="p_phi_loc" coreId="4228300630" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -93,52 +93,52 @@
       <dataInputObjs>sts_clear</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln142" lineNumber="142" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="254" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="142" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln145" lineNumber="145" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="0" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="145" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <dataInputObjs>read</dataInputObjs>
-      <controlInputObjs>VITIS_LOOP_149_2.preheader</controlInputObjs>
+      <controlInputObjs>VITIS_LOOP_152_2.preheader</controlInputObjs>
       <controlInputObjs>if.then</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>142</validLinenumbers>
+      <validLinenumbers>145</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="23" name="VITIS_LOOP_149_2.preheader" type="BlockType">
+  <blocks id="23" name="VITIS_LOOP_152_2.preheader" type="BlockType">
     <controlInputObjs>entry</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>VITIS_LOOP_149_2</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="out_val_last_V" originalName="out_val.last.V" coreId="1885414944" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <controlOutputObjs>VITIS_LOOP_152_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="out_val_last_V" originalName="out_val.last.V" coreId="3341002944" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln140" lineNumber="140" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="825045040" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="140" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
-      <controlInputObjs>VITIS_LOOP_149_2</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln143" lineNumber="143" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="622865508" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="143" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
+      <controlInputObjs>VITIS_LOOP_152_2</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>140</validLinenumbers>
+      <validLinenumbers>143</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="32" name="VITIS_LOOP_149_2" type="BlockType">
-    <controlInputObjs>VITIS_LOOP_149_2.preheader</controlInputObjs>
-    <controlInputObjs>VITIS_LOOP_149_2</controlInputObjs>
+  <blocks id="32" name="VITIS_LOOP_152_2" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_152_2.preheader</controlInputObjs>
+    <controlInputObjs>VITIS_LOOP_152_2</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>if.then10</controlOutputObjs>
-    <controlOutputObjs>VITIS_LOOP_149_2</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="out_val_last_V_load" coreId="1330007625" bitwidth="1" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <controlOutputObjs>VITIS_LOOP_152_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="out_val_last_V_load" coreId="3341025200" bitwidth="1" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp" lineNumber="145" originalName="tmp" fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="read" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="3.56" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="read"/>
-      <dataInputObjs>outcount48</dataInputObjs>
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="read"/>
+      <dataInputObjs>outcount41</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="empty" coreId="1059270192" bitwidth="32" opcode="wait" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln145" lineNumber="145" fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="grp_sendoutstream_Pipeline_VITIS_LOOP_149_2_fu_101" coreId="1702258035" contextFuncName="read" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="1.58" m_topoIndex="14" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="read"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="empty" coreId="3341252208" bitwidth="32" opcode="wait" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln145" lineNumber="145" fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="grp_sendoutstream_Pipeline_VITIS_LOOP_152_2_fu_101" coreId="0" contextFuncName="read" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="1.58" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="read"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
       <dataInputObjs>outbuf</dataInputObjs>
@@ -148,45 +148,45 @@
       <dataOutputObjs>outStreamTop_V_strb_V</dataOutputObjs>
       <dataOutputObjs>outStreamTop_V_user_V</dataOutputObjs>
       <dataOutputObjs>outStreamTop_V_last_V</dataOutputObjs>
-      <constName>sendoutstream_Pipeline_VITIS_LOOP_149_2</constName>
+      <constName>sendoutstream_Pipeline_VITIS_LOOP_152_2</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_phi_loc_load" coreId="1059148592" bitwidth="1" opcode="load" nodeLabel="4.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_phi_loc_load" coreId="0" bitwidth="1" opcode="load" nodeLabel="4.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="out_val_last_V_write_ln157" lineNumber="157" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1059281072" contextFuncName="sendoutstream" opcode="store" nodeLabel="4.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="157" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="out_val_last_V_write_ln160" lineNumber="160" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="3341277184" contextFuncName="sendoutstream" opcode="store" nodeLabel="4.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="160" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln157" lineNumber="157" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1058601584" contextFuncName="sendoutstream" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="157" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln160" lineNumber="160" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="7955819" contextFuncName="sendoutstream" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="160" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <dataInputObjs>load</dataInputObjs>
-      <controlInputObjs>VITIS_LOOP_149_2</controlInputObjs>
+      <controlInputObjs>VITIS_LOOP_152_2</controlInputObjs>
       <controlInputObjs>if.then10</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h">
       <validLinenumbers>145</validLinenumbers>
     </fileValidLineNumbers>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>157</validLinenumbers>
+      <validLinenumbers>160</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="35" name="if.then10" type="BlockType">
-    <controlInputObjs>VITIS_LOOP_149_2</controlInputObjs>
+    <controlInputObjs>VITIS_LOOP_152_2</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>if.end12</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="m2s_buf_sts_write_ln159" lineNumber="159" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1059144112" contextFuncName="sendoutstream" opcode="write" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="159" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="m2s_buf_sts_write_ln162" lineNumber="162" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1718511904" contextFuncName="sendoutstream" opcode="write" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="162" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <dataOutputObjs>m2s_buf_sts</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln0" coreId="1059144224" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln0" coreId="0" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <controlInputObjs>if.end12</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>159</validLinenumbers>
+      <validLinenumbers>162</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="37" name="if.then" type="BlockType">
@@ -194,31 +194,31 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>if.then1</controlOutputObjs>
     <controlOutputObjs>if.end</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln143" lineNumber="143" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1058602624" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="143" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln146" lineNumber="146" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="0" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="146" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <dataInputObjs>read</dataInputObjs>
       <controlInputObjs>if.end</controlInputObjs>
       <controlInputObjs>if.then1</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>143</validLinenumbers>
+      <validLinenumbers>146</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="40" name="if.then1" type="BlockType">
     <controlInputObjs>if.then</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>if.end</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="m2s_buf_sts_write_ln144" lineNumber="144" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1059279168" contextFuncName="sendoutstream" opcode="write" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="144" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="m2s_buf_sts_write_ln147" lineNumber="147" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="3341336176" contextFuncName="sendoutstream" opcode="write" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="147" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <dataOutputObjs>m2s_buf_sts</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln144" lineNumber="144" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1059281904" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="144" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln147" lineNumber="147" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="543434016" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="147" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <controlInputObjs>if.end</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>144</validLinenumbers>
+      <validLinenumbers>147</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="42" name="if.end" type="BlockType">
@@ -227,12 +227,12 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>if.end12</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="br_ln146" lineNumber="146" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1059270192" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="146" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="br_ln149" lineNumber="149" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1718511904" contextFuncName="sendoutstream" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="149" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
       <controlInputObjs>if.end12</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>146</validLinenumbers>
+      <validLinenumbers>149</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="44" name="if.end12" type="BlockType">
@@ -240,11 +240,11 @@
     <controlInputObjs>if.end</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln162" lineNumber="162" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="1059279168" contextFuncName="sendoutstream" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="162" fileDirectory="/home/ubuntu/SoC_Design/fsic_fpga/vivado/vitis_prj" functionName="sendoutstream"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln165" lineNumber="165" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="3341009984" contextFuncName="sendoutstream" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="165" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="sendoutstream"/>
     </node_objs>
     <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-      <validLinenumbers>162</validLinenumbers>
+      <validLinenumbers>165</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
@@ -270,13 +270,13 @@
   <expressionNodes realName="out_val_last_V_fu_70">
     <nodeIds>21</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_sendoutstream_Pipeline_VITIS_LOOP_149_2_fu_101">
+  <moduleNodes realName="grp_sendoutstream_Pipeline_VITIS_LOOP_152_2_fu_101">
     <nodeIds>28</nodeIds>
   </moduleNodes>
   <ioNodes realName="in_en_clrsts_read_read_fu_74">
     <nodeIds>13</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln157_store_fu_127">
+  <ioNodes realName="store_ln160_store_fu_127">
     <nodeIds>30</nodeIds>
   </ioNodes>
   <ioNodes realName="out_val_last_V_load_load_fu_120">
@@ -336,7 +336,7 @@
       <nodeIds>28</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="outcount48">
+  <ioPorts name="outcount41">
     <contents name="read">
       <nodeIds>26</nodeIds>
     </contents>
@@ -419,7 +419,7 @@
       <basicBlocks>42</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="3" mTag="VITIS_LOOP_147_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+    <cfgRegions mId="3" mTag="VITIS_LOOP_150_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
       <basicBlocks>32</basicBlocks>
       <mDfPipe/>
     </cfgRegions>

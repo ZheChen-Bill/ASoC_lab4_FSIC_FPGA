@@ -86,7 +86,7 @@ module fsic_tb2();
           repeat (100000) @(posedge sys_clock);
           $display("%t MSG %m, +100000 cycles, finish_flag=%b,  repeat_cnt=%04d", $time, finish_flag, repeat_cnt);
         end  
-        while(finish_flag == 0 && repeat_cnt <= 100 );
+        while(finish_flag == 0 && repeat_cnt <= 330 );
         timeout_flag = 1;
       end   
     `endif //SHOW_HEART_BEAT
@@ -133,7 +133,7 @@ module fsic_tb2();
         FpgaLocal_CfgRead();
         SocLocal_MbWrite();
         FpgaLocal_MbWrite();
-        //SocLa2DmaPath();
+        SocLa2DmaPath();
         SocUp2DmaPath();
 
         #500us    
@@ -831,7 +831,7 @@ module fsic_tb2();
         end
     endtask
 
-    /// reg [31:0] updma_img [0:63];
+    reg [31:0] updma_img [0:63];
     reg [31:0] updma_data;
     reg [31:0] taps [0:10];
     initial begin
@@ -854,7 +854,7 @@ module fsic_tb2();
             $display($time, "=> =======================================================================");
 
             /// $readmemh("../../../../../in_img.hex", updma_img);
-            
+
             fd = $fopen ("../../../../../updma_input.log", "w");
             for (index = 0; index < 64; index +=1) begin
                 updma_data = index;
@@ -1122,7 +1122,8 @@ module fsic_tb2();
             data = 32'h0000_0001;
             axil_cycles_gen(WriteCyc, PL_UPDMA, offset, data, 1);
 
-            
+            //#1000000;
+            //$finish;
             fork
                 CheckuserDMADone();
             join_none
