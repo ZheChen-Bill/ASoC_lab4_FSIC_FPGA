@@ -6,7 +6,11 @@
 <Project Version="7" Minor="60" Path="/home/ubuntu/Advanced_SoC/lab_4/ASoC_lab4_FSIC_FPGA/vivado/vvd_caravel_fpga_sim/vvd_caravel_fpga_sim.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
+<<<<<<< HEAD
     <Option Name="Id" Val="60928a412af34b499c725b38fc2d5954"/>
+=======
+    <Option Name="Id" Val="dd00e97300f0472f9efad10b7b75f1a7"/>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

@@ -33,8 +33,8 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>9</BRAM_18K>
-            <FF>4316</FF>
-            <LUT>8143</LUT>
+            <FF>4182</FF>
+            <LUT>7867</LUT>
             <DSP>0</DSP>
             <URAM>0</URAM>
         </Resources>
@@ -1524,68 +1524,68 @@
                     <InstName>entry_proc_U0</InstName>
                     <ModuleName>entry_proc</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>276</ID>
+                    <ID>266</ID>
                 </Instance>
                 <Instance>
                     <InstName>getinstream_U0</InstName>
                     <ModuleName>getinstream</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>289</ID>
+                    <ID>279</ID>
                     <InstancesList>
                         <Instance>
-                            <InstName>grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132</InstName>
+                            <InstName>grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_112</InstName>
                             <ModuleName>getinstream_Pipeline_VITIS_LOOP_48_1</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>132</ID>
-                            <BindInstances>add_ln67_fu_194_p2 count_4_fu_214_p2 add_ln886_fu_220_p2</BindInstances>
+                            <ID>112</ID>
+                            <BindInstances>count_4_fu_158_p2 add_ln886_fu_164_p2</BindInstances>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>sub_i_i52_fu_162_p2 add_ln48_fu_174_p2</BindInstances>
+                    <BindInstances>add_ln48_fu_139_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>paralleltostreamwithburst_U0</InstName>
                     <ModuleName>paralleltostreamwithburst</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>319</ID>
+                    <ID>305</ID>
                     <InstancesList>
                         <Instance>
-                            <InstName>grp_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2_fu_173</InstName>
-                            <ModuleName>paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2</ModuleName>
+                            <InstName>grp_paralleltostreamwithburst_Pipeline_VITIS_LOOP_108_2_fu_161</InstName>
+                            <ModuleName>paralleltostreamwithburst_Pipeline_VITIS_LOOP_108_2</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>173</ID>
-                            <BindInstances>add_ln106_fu_169_p2 add_ln122_fu_217_p2 add_ln126_fu_237_p2</BindInstances>
+                            <ID>161</ID>
+                            <BindInstances>add_ln108_fu_151_p2 add_ln129_fu_185_p2</BindInstances>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>sub_i_i_fu_218_p2 sub_fu_254_p2 add_ln106_fu_272_p2 add_ln129_fu_305_p2</BindInstances>
+                    <BindInstances>sub_fu_229_p2 add_ln108_fu_247_p2 add_ln132_fu_280_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>streamtoparallelwithburst_U0</InstName>
                     <ModuleName>streamtoparallelwithburst</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>342</ID>
+                    <ID>324</ID>
                     <InstancesList>
                         <Instance>
-                            <InstName>grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148</InstName>
+                            <InstName>grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_154</InstName>
                             <ModuleName>streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>148</ID>
+                            <ID>154</ID>
                             <BindInstances>add_ln23_fu_110_p2</BindInstances>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>add_ln23_fu_194_p2 add_ln28_fu_226_p2 add_ln886_fu_236_p2</BindInstances>
+                    <BindInstances>add_ln23_fu_200_p2 add_ln28_fu_232_p2 add_ln886_fu_242_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>sendoutstream_U0</InstName>
                     <ModuleName>sendoutstream</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>360</ID>
+                    <ID>342</ID>
                     <InstancesList>
                         <Instance>
-                            <InstName>grp_sendoutstream_Pipeline_VITIS_LOOP_149_2_fu_101</InstName>
-                            <ModuleName>sendoutstream_Pipeline_VITIS_LOOP_149_2</ModuleName>
+                            <InstName>grp_sendoutstream_Pipeline_VITIS_LOOP_152_2_fu_101</InstName>
+                            <ModuleName>sendoutstream_Pipeline_VITIS_LOOP_152_2</ModuleName>
                             <IsCompInst>true</IsCompInst>
                             <ID>101</ID>
-                            <BindInstances>add_ln149_fu_144_p2</BindInstances>
+                            <BindInstances>add_ln152_fu_144_p2</BindInstances>
                         </Instance>
                     </InstancesList>
                 </Instance>
@@ -1669,10 +1669,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>140</FF>
+                    <FF>106</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>281</LUT>
+                    <LUT>192</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1687,9 +1687,8 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_48_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln67_fu_194_p2" SOURCE="hls_userdma/userdma.cpp:67" URAM="0" VARIABLE="add_ln67"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_48_1" OPTYPE="add" PRAGMA="" RTLNAME="count_4_fu_214_p2" SOURCE="hls_userdma/userdma.cpp:69" URAM="0" VARIABLE="count_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_48_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln886_fu_220_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_base.h:886" URAM="0" VARIABLE="add_ln886"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_48_1" OPTYPE="add" PRAGMA="" RTLNAME="count_4_fu_158_p2" SOURCE="hls_userdma/userdma.cpp:71" URAM="0" VARIABLE="count_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_48_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln886_fu_164_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_base.h:886" URAM="0" VARIABLE="add_ln886"/>
             </BindNodes>
         </Module>
         <Module>
@@ -1713,12 +1712,12 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>244</FF>
+                    <FF>177</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>544</LUT>
+                    <LUT>409</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
-                    <UTIL_LUT>1</UTIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
@@ -1731,8 +1730,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i52_fu_162_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i52"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln48_fu_174_p2" SOURCE="hls_userdma/userdma.cpp:48" URAM="0" VARIABLE="add_ln48"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln48_fu_139_p2" SOURCE="hls_userdma/userdma.cpp:48" URAM="0" VARIABLE="add_ln48"/>
             </BindNodes>
         </Module>
         <Module>
@@ -1828,7 +1826,7 @@
                         <PipelineDepth>2 ~ ?</PipelineDepth>
                         <PipelineType>no</PipelineType>
                         <InstanceList>
-                            <Instance>grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148</Instance>
+                            <Instance>grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_154</Instance>
                         </InstanceList>
                     </VITIS_LOOP_20_1>
                 </SummaryOfLoopLatency>
@@ -1838,7 +1836,7 @@
                     <FF>415</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>764</LUT>
+                    <LUT>762</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>1</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1853,15 +1851,15 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_20_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_194_p2" SOURCE="hls_userdma/userdma.cpp:23" URAM="0" VARIABLE="add_ln23"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_20_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln28_fu_226_p2" SOURCE="hls_userdma/userdma.cpp:28" URAM="0" VARIABLE="add_ln28"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_20_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln886_fu_236_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_base.h:886" URAM="0" VARIABLE="add_ln886"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_20_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_200_p2" SOURCE="hls_userdma/userdma.cpp:23" URAM="0" VARIABLE="add_ln23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_20_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln28_fu_232_p2" SOURCE="hls_userdma/userdma.cpp:28" URAM="0" VARIABLE="add_ln28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_20_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln886_fu_242_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_base.h:886" URAM="0" VARIABLE="add_ln886"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2</Name>
+            <Name>paralleltostreamwithburst_Pipeline_VITIS_LOOP_108_2</Name>
             <Loops>
-                <VITIS_LOOP_106_2/>
+                <VITIS_LOOP_108_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -1880,8 +1878,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_106_2>
-                        <Name>VITIS_LOOP_106_2</Name>
+                    <VITIS_LOOP_108_2>
+                        <Name>VITIS_LOOP_108_2</Name>
                         <TripCount>undef</TripCount>
                         <Latency>2 ~ ?</Latency>
                         <AbsoluteTimeLatency>20.000 ns ~ ?</AbsoluteTimeLatency>
@@ -1889,15 +1887,15 @@
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_106_2>
+                    </VITIS_LOOP_108_2>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>139</FF>
+                    <FF>105</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>321</LUT>
+                    <LUT>222</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1912,15 +1910,14 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_106_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln106_fu_169_p2" SOURCE="hls_userdma/userdma.cpp:106" URAM="0" VARIABLE="add_ln106"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_106_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln122_fu_217_p2" SOURCE="hls_userdma/userdma.cpp:122" URAM="0" VARIABLE="add_ln122"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_106_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln126_fu_237_p2" SOURCE="hls_userdma/userdma.cpp:126" URAM="0" VARIABLE="add_ln126"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_108_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln108_fu_151_p2" SOURCE="hls_userdma/userdma.cpp:108" URAM="0" VARIABLE="add_ln108"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_108_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln129_fu_185_p2" SOURCE="hls_userdma/userdma.cpp:129" URAM="0" VARIABLE="add_ln129"/>
             </BindNodes>
         </Module>
         <Module>
             <Name>paralleltostreamwithburst</Name>
             <Loops>
-                <VITIS_LOOP_98_1/>
+                <VITIS_LOOP_100_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -1939,8 +1936,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_98_1>
-                        <Name>VITIS_LOOP_98_1</Name>
+                    <VITIS_LOOP_100_1>
+                        <Name>VITIS_LOOP_100_1</Name>
                         <TripCount>undef</TripCount>
                         <Latency>undef</Latency>
                         <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
@@ -1953,17 +1950,17 @@
                         <PipelineDepth>3 ~ ?</PipelineDepth>
                         <PipelineType>no</PipelineType>
                         <InstanceList>
-                            <Instance>grp_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2_fu_173</Instance>
+                            <Instance>grp_paralleltostreamwithburst_Pipeline_VITIS_LOOP_108_2_fu_161</Instance>
                         </InstanceList>
-                    </VITIS_LOOP_98_1>
+                    </VITIS_LOOP_100_1>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>514</FF>
+                    <FF>447</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>984</LUT>
+                    <LUT>845</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>1</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1978,16 +1975,15 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i_fu_218_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_98_1" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_254_p2" SOURCE="hls_userdma/userdma.cpp:86" URAM="0" VARIABLE="sub"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_98_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln106_fu_272_p2" SOURCE="hls_userdma/userdma.cpp:106" URAM="0" VARIABLE="add_ln106"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_98_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln129_fu_305_p2" SOURCE="hls_userdma/userdma.cpp:129" URAM="0" VARIABLE="add_ln129"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_229_p2" SOURCE="hls_userdma/userdma.cpp:88" URAM="0" VARIABLE="sub"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln108_fu_247_p2" SOURCE="hls_userdma/userdma.cpp:108" URAM="0" VARIABLE="add_ln108"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln132_fu_280_p2" SOURCE="hls_userdma/userdma.cpp:132" URAM="0" VARIABLE="add_ln132"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>sendoutstream_Pipeline_VITIS_LOOP_149_2</Name>
+            <Name>sendoutstream_Pipeline_VITIS_LOOP_152_2</Name>
             <Loops>
-                <VITIS_LOOP_149_2/>
+                <VITIS_LOOP_152_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -2006,8 +2002,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_149_2>
-                        <Name>VITIS_LOOP_149_2</Name>
+                    <VITIS_LOOP_152_2>
+                        <Name>VITIS_LOOP_152_2</Name>
                         <TripCount>undef</TripCount>
                         <Latency>undef</Latency>
                         <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
@@ -2015,7 +2011,7 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_149_2>
+                    </VITIS_LOOP_152_2>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -2038,13 +2034,13 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_149_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln149_fu_144_p2" SOURCE="hls_userdma/userdma.cpp:149" URAM="0" VARIABLE="add_ln149"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_152_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln152_fu_144_p2" SOURCE="hls_userdma/userdma.cpp:152" URAM="0" VARIABLE="add_ln152"/>
             </BindNodes>
         </Module>
         <Module>
             <Name>sendoutstream</Name>
             <Loops>
-                <VITIS_LOOP_147_1/>
+                <VITIS_LOOP_150_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -2063,8 +2059,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_147_1>
-                        <Name>VITIS_LOOP_147_1</Name>
+                    <VITIS_LOOP_150_1>
+                        <Name>VITIS_LOOP_150_1</Name>
                         <TripCount>undef</TripCount>
                         <Latency>undef</Latency>
                         <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
@@ -2072,9 +2068,9 @@
                         <PipelineDepth>undef</PipelineDepth>
                         <PipelineType>no</PipelineType>
                         <InstanceList>
-                            <Instance>grp_sendoutstream_Pipeline_VITIS_LOOP_149_2_fu_101</Instance>
+                            <Instance>grp_sendoutstream_Pipeline_VITIS_LOOP_152_2_fu_101</Instance>
                         </InstanceList>
-                    </VITIS_LOOP_147_1>
+                    </VITIS_LOOP_150_1>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -2122,12 +2118,12 @@
                     <BRAM_18K>9</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>3</UTIL_BRAM>
-                    <FF>4316</FF>
+                    <FF>4182</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
-                    <UTIL_FF>4</UTIL_FF>
-                    <LUT>8143</LUT>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>7867</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
-                    <UTIL_LUT>15</UTIL_LUT>
+                    <UTIL_LUT>14</UTIL_LUT>
                     <DSP>0</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
                     <UTIL_DSP>0</UTIL_DSP>
@@ -2137,16 +2133,16 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="m2s_enb_clrsts_c_U" SOURCE="hls_userdma/userdma.cpp:196" URAM="0" VARIABLE="m2s_enb_clrsts_c"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="m2s_sts_clear_c_U" SOURCE="hls_userdma/userdma.cpp:196" URAM="0" VARIABLE="m2s_sts_clear_c"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2mbuf_c_U" SOURCE="hls_userdma/userdma.cpp:196" URAM="0" VARIABLE="s2mbuf_c"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2m_enb_clrsts_c_U" SOURCE="hls_userdma/userdma.cpp:196" URAM="0" VARIABLE="s2m_enb_clrsts_c"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2m_len_c_U" SOURCE="hls_userdma/userdma.cpp:196" URAM="0" VARIABLE="s2m_len_c"/>
-                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2m_sts_clear_c_U" SOURCE="hls_userdma/userdma.cpp:196" URAM="0" VARIABLE="s2m_sts_clear_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="m2s_enb_clrsts_c_U" SOURCE="hls_userdma/userdma.cpp:199" URAM="0" VARIABLE="m2s_enb_clrsts_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="m2s_sts_clear_c_U" SOURCE="hls_userdma/userdma.cpp:199" URAM="0" VARIABLE="m2s_sts_clear_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2mbuf_c_U" SOURCE="hls_userdma/userdma.cpp:199" URAM="0" VARIABLE="s2mbuf_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2m_enb_clrsts_c_U" SOURCE="hls_userdma/userdma.cpp:199" URAM="0" VARIABLE="s2m_enb_clrsts_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2m_len_c_U" SOURCE="hls_userdma/userdma.cpp:199" URAM="0" VARIABLE="s2m_len_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2m_sts_clear_c_U" SOURCE="hls_userdma/userdma.cpp:199" URAM="0" VARIABLE="s2m_sts_clear_c"/>
                 <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="inbuf_U" SOURCE="" URAM="0" VARIABLE="inbuf"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="incount_U" SOURCE="hls_userdma/userdma.cpp:199" URAM="0" VARIABLE="incount"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="incount_U" SOURCE="hls_userdma/userdma.cpp:202" URAM="0" VARIABLE="incount"/>
                 <BindNode BINDTYPE="storage" BRAM="3" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="outbuf_U" SOURCE="" URAM="0" VARIABLE="outbuf"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="outcount_U" SOURCE="hls_userdma/userdma.cpp:201" URAM="0" VARIABLE="outcount"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="outcount_U" SOURCE="hls_userdma/userdma.cpp:204" URAM="0" VARIABLE="outcount"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -2798,14 +2794,14 @@
                 <table>
                     <keys size="6">HW Interface, Loop, Direction, Length, Width, Location</keys>
                     <column name="m_axi_gmem0">VITIS_LOOP_23_2, write, variable, 32, hls_userdma/userdma.cpp:23:22</column>
-                    <column name="m_axi_gmem1">VITIS_LOOP_106_2, read, variable, 32, hls_userdma/userdma.cpp:106:23</column>
+                    <column name="m_axi_gmem1">VITIS_LOOP_108_2, read, variable, 32, hls_userdma/userdma.cpp:108:23</column>
                 </table>
             </item>
             <item name="Inferred Bursts and Widening Missed">
                 <table>
                     <keys size="6">HW Interface, Variable, Loop, Problem, Resolution, Location</keys>
                     <column name="m_axi_gmem0">out_memory, VITIS_LOOP_23_2, Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0, 214-353, hls_userdma/userdma.cpp:23:22</column>
-                    <column name="m_axi_gmem1">in_memory, VITIS_LOOP_106_2, Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0, 214-353, hls_userdma/userdma.cpp:106:23</column>
+                    <column name="m_axi_gmem1">in_memory, VITIS_LOOP_108_2, Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0, 214-353, hls_userdma/userdma.cpp:108:23</column>
                 </table>
             </item>
         </section>
@@ -2813,26 +2809,26 @@
     <PragmaReport>
         <Pragma type="pipeline" location="hls_userdma/userdma.cpp:24" status="valid" parentFunction="streamtoparallelwithburst" variable="" isDirective="0" options=""/>
         <Pragma type="pipeline" location="hls_userdma/userdma.cpp:49" status="valid" parentFunction="getinstream" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="hls_userdma/userdma.cpp:107" status="valid" parentFunction="paralleltostreamwithburst" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="hls_userdma/userdma.cpp:150" status="valid" parentFunction="sendoutstream" variable="" isDirective="0" options=""/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:178" status="valid" parentFunction="userdma" variable="inStreamTop" isDirective="0" options="axis register_mode=both register port=inStreamTop"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:179" status="valid" parentFunction="userdma" variable="s2mbuf" isDirective="0" options="m_axi max_write_burst_length=64 latency=10 depth=1024 bundle=gmem0 port=s2mbuf offset = slave"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:180" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_buf_sts bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:181" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_sts_clear bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:182" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_len bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:183" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_enb_clrsts bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:184" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2mbuf bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:185" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_err bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:186" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = Img_width bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:187" status="valid" parentFunction="userdma" variable="outStreamTop" isDirective="0" options="axis register_mode=both register port=outStreamTop"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:188" status="valid" parentFunction="userdma" variable="m2sbuf" isDirective="0" options="m_axi max_write_burst_length=64 latency=10 depth=1024 bundle=gmem1 port=m2sbuf offset = slave"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:189" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_buf_sts bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:190" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_sts_clear bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:191" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_len bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:192" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_enb_clrsts bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:193" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2sbuf bundle = control"/>
-        <Pragma type="interface" location="hls_userdma/userdma.cpp:194" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = return bundle = control"/>
-        <Pragma type="dataflow" location="hls_userdma/userdma.cpp:196" status="valid" parentFunction="userdma" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="hls_userdma/userdma.cpp:109" status="valid" parentFunction="paralleltostreamwithburst" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="hls_userdma/userdma.cpp:153" status="valid" parentFunction="sendoutstream" variable="" isDirective="0" options=""/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:181" status="valid" parentFunction="userdma" variable="inStreamTop" isDirective="0" options="axis register_mode=both register port=inStreamTop"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:182" status="valid" parentFunction="userdma" variable="s2mbuf" isDirective="0" options="m_axi max_write_burst_length=64 latency=10 depth=1024 bundle=gmem0 port=s2mbuf offset = slave"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:183" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_buf_sts bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:184" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_sts_clear bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:185" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_len bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:186" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_enb_clrsts bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:187" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2mbuf bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:188" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = s2m_err bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:189" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = Img_width bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:190" status="valid" parentFunction="userdma" variable="outStreamTop" isDirective="0" options="axis register_mode=both register port=outStreamTop"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:191" status="valid" parentFunction="userdma" variable="m2sbuf" isDirective="0" options="m_axi max_write_burst_length=64 latency=10 depth=1024 bundle=gmem1 port=m2sbuf offset = slave"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:192" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_buf_sts bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:193" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_sts_clear bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:194" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_len bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:195" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2s_enb_clrsts bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:196" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = m2sbuf bundle = control"/>
+        <Pragma type="interface" location="hls_userdma/userdma.cpp:197" status="valid" parentFunction="userdma" variable="" isDirective="0" options="s_axilite port = return bundle = control"/>
+        <Pragma type="dataflow" location="hls_userdma/userdma.cpp:199" status="valid" parentFunction="userdma" variable="" isDirective="0" options=""/>
     </PragmaReport>
 </profile>
 

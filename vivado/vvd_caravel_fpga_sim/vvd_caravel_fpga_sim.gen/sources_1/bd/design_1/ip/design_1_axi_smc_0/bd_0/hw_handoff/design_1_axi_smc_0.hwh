@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<<<<<<< HEAD
 <EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May 18 11:16:45 2024" VIVADOVERSION="2022.1">
+=======
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May 18 12:46:17 2024" VIVADOVERSION="2022.1">
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="bd_afc3" PACKAGE="clg400" SPEEDGRADE="-1"/>
 

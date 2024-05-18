@@ -2,10 +2,17 @@
 <Root MajorVersion="0" MinorVersion="40">
   <CompositeFile CompositeFileTopName="bd_a878" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
+<<<<<<< HEAD
     <Generation Name="SYNTHESIS" State="RESET" Timestamp="1716045406"/>
     <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1716045406"/>
     <Generation Name="SIMULATION" State="GENERATED" Timestamp="1716045406"/>
     <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1716045406"/>
+=======
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1716050779"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1716050778"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1716050779"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1716050779"/>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth/bd_a878.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
