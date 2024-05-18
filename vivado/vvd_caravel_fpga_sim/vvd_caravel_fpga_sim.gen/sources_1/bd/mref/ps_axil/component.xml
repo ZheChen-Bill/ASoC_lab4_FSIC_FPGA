@@ -2903,7 +2903,11 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
+<<<<<<< HEAD
+      <xilinx:coreCreationDateTime>2024-05-18T15:16:30Z</xilinx:coreCreationDateTime>
+=======
       <xilinx:coreCreationDateTime>2024-05-18T16:46:01Z</xilinx:coreCreationDateTime>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>

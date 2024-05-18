@@ -18,7 +18,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
+            <spirit:value>Sat May 18 15:16:44 UTC 2024</spirit:value>
+=======
             <spirit:value>Sat May 18 16:46:16 UTC 2024</spirit:value>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -38,7 +42,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
+            <spirit:value>Sat May 18 15:16:46 UTC 2024</spirit:value>
+=======
             <spirit:value>Sat May 18 16:46:18 UTC 2024</spirit:value>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -62,7 +70,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
+            <spirit:value>Sat May 18 15:16:46 UTC 2024</spirit:value>
+=======
             <spirit:value>Sat May 18 16:46:18 UTC 2024</spirit:value>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -82,7 +94,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
+            <spirit:value>Sat May 18 15:16:46 UTC 2024</spirit:value>
+=======
             <spirit:value>Sat May 18 16:46:18 UTC 2024</spirit:value>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>

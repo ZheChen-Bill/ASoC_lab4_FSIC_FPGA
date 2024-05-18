@@ -128,12 +128,21 @@ module fsic_tb2();
         @(is_txen_event);      
         $display($time, "=> Starting test...");
 
+<<<<<<< HEAD
+        //Fpga2Soc_CfgRead();
+        //Fpga2Soc_CfgWrite();
+        //FpgaLocal_CfgRead();
+        //SocLocal_MbWrite();
+        //FpgaLocal_MbWrite();
+        //SocLa2DmaPath();
+=======
         Fpga2Soc_CfgRead();
         Fpga2Soc_CfgWrite();
         FpgaLocal_CfgRead();
         SocLocal_MbWrite();
         FpgaLocal_MbWrite();
         SocLa2DmaPath();
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
         SocUp2DmaPath();
 
         #500us    
@@ -1122,8 +1131,13 @@ module fsic_tb2();
             data = 32'h0000_0001;
             axil_cycles_gen(WriteCyc, PL_UPDMA, offset, data, 1);
 
+<<<<<<< HEAD
+            #1000000;
+            $finish;
+=======
             //#1000000;
             //$finish;
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
             fork
                 CheckuserDMADone();
             join_none

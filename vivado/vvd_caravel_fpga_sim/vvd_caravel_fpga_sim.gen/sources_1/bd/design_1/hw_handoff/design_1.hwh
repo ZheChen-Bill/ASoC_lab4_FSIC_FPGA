@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<<<<<<< HEAD
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May 18 11:16:49 2024" VIVADOVERSION="2022.1">
+=======
 <EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May 18 12:46:21 2024" VIVADOVERSION="2022.1">
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -4723,7 +4727,11 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
+<<<<<<< HEAD
+    <MODULE COREREVISION="2113558496" FULLNAME="/userdma_0" HWVERSION="1.0" INSTANCE="userdma_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="userdma" VLNV="xilinx.com:hls:userdma:1.0">
+=======
     <MODULE COREREVISION="2113562965" FULLNAME="/userdma_0" HWVERSION="1.0" INSTANCE="userdma_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="userdma" VLNV="xilinx.com:hls:userdma:1.0">
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="read-write" INTERFACE="s_axi_control" NAME="Reg" RANGE="65536" USAGE="register">

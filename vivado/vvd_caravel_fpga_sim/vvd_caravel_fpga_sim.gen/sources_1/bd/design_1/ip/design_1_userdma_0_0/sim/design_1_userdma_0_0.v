@@ -48,7 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:userdma:1.0
+<<<<<<< HEAD
+// IP Revision: 2113558496
+=======
 // IP Revision: 2113562965
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
 
 `timescale 1ns/1ps
 

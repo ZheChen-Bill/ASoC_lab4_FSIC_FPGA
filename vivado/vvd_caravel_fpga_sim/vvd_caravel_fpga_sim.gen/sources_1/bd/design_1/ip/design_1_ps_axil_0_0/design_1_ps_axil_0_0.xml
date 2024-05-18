@@ -2397,7 +2397,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
+            <spirit:value>Sat May 18 15:16:48 UTC 2024</spirit:value>
+=======
             <spirit:value>Sat May 18 16:46:21 UTC 2024</spirit:value>
+>>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
