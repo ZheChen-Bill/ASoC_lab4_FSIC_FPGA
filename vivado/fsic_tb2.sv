@@ -86,7 +86,7 @@ module fsic_tb2();
           repeat (100000) @(posedge sys_clock);
           $display("%t MSG %m, +100000 cycles, finish_flag=%b,  repeat_cnt=%04d", $time, finish_flag, repeat_cnt);
         end  
-        while(finish_flag == 0 && repeat_cnt <= 330 );
+        while(finish_flag == 0 && repeat_cnt <= 100 );
         timeout_flag = 1;
       end   
     `endif //SHOW_HEART_BEAT
@@ -108,6 +108,11 @@ module fsic_tb2();
     end 
     
     initial begin
+        $dumpfile("FSIC_tb2.vcd");
+        $dumpvars(0,fsic_tb2);
+    end
+
+    initial begin
         master_agent = new("master vip agent", DUT.design_1_i.axi_vip_0.inst.IF);
         master_agent.start_master();
         
@@ -128,7 +133,7 @@ module fsic_tb2();
         FpgaLocal_CfgRead();
         SocLocal_MbWrite();
         FpgaLocal_MbWrite();
-        SocLa2DmaPath();
+        //SocLa2DmaPath();
         SocUp2DmaPath();
 
         #500us    
@@ -975,12 +980,12 @@ module fsic_tb2();
             // Not necessary
             $display($time, "=> FpgaLocal_Write: PL_UPDMA, set image width...");
             offset = 32'h0000_0054;
-            data = 32'h0000_00A0;
+            data = 32'd64;
             axil_cycles_gen(WriteCyc, PL_UPDMA, offset, data, 1);
             //#20us
             axil_cycles_gen(ReadCyc, PL_UPDMA, offset, data, 1);
             //#20us
-            if(data == 32'h0000_00A0) begin
+            if(data == 32'd64) begin
                 $display($time, "=> Fpga2Soc_Write PL_UPDMA offset %h = %h, PASS", offset, data);
             end else begin
                 $display($time, "=> Fpga2Soc_Write PL_UPDMA offset %h = %h, FAIL", offset, data);
@@ -1091,12 +1096,12 @@ module fsic_tb2();
                 end
             end
 
-            /// // 8. Program ap_start = 1
-            /// offset = 12'h0;
-            /// data = 32'd1;
-            /// axil_cycles_gen(WriteCyc, SOC_UP, offset, data, 1);
 
-
+            // 8. Program ap_start = 1
+            offset = 12'h0;
+            data = 32'd1;
+            axil_cycles_gen(WriteCyc, SOC_UP, offset, data, 1);
+            
             // Modified
             /// $display($time, "=> Fpga2Soc_Write: SOC_CC");
             /// offset = 0;
@@ -1117,6 +1122,7 @@ module fsic_tb2();
             data = 32'h0000_0001;
             axil_cycles_gen(WriteCyc, PL_UPDMA, offset, data, 1);
 
+            
             fork
                 CheckuserDMADone();
             join_none
@@ -1147,7 +1153,7 @@ module fsic_tb2();
 
                     fd = $fopen ("../../../../../updma_output.log", "w");
                     for (index = 0; index < 64; index +=1) begin
-                        $fdisplay(fd, "%d", slave_agent2.mem_model.backdoor_memory_read_4byte(addro+index*4));
+                        $fdisplay(fd, "%08h", slave_agent2.mem_model.backdoor_memory_read_4byte(addro+index*4));
                     end
 
                     $fclose(fd);

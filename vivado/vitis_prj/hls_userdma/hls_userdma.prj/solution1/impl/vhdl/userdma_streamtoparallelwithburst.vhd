@@ -19,13 +19,13 @@ port (
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
     inbuf_dout : IN STD_LOGIC_VECTOR (32 downto 0);
-    inbuf_num_data_valid : IN STD_LOGIC_VECTOR (7 downto 0);
-    inbuf_fifo_cap : IN STD_LOGIC_VECTOR (7 downto 0);
+    inbuf_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+    inbuf_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
     inbuf_empty_n : IN STD_LOGIC;
     inbuf_read : OUT STD_LOGIC;
     incount47_dout : IN STD_LOGIC_VECTOR (31 downto 0);
-    incount47_num_data_valid : IN STD_LOGIC_VECTOR (3 downto 0);
-    incount47_fifo_cap : IN STD_LOGIC_VECTOR (3 downto 0);
+    incount47_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
+    incount47_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
     incount47_empty_n : IN STD_LOGIC;
     incount47_read : OUT STD_LOGIC;
     in_en_clrsts_dout : IN STD_LOGIC_VECTOR (0 downto 0);
@@ -141,7 +141,7 @@ architecture behav of userdma_streamtoparallelwithburst is
     constant ap_const_lv64_2 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000010";
     constant ap_const_lv32_3F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000111111";
     constant ap_const_lv32_E100 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000001110000100000000";
-    constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
     constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
 
 attribute shreg_extract : string;
@@ -274,8 +274,8 @@ attribute shreg_extract : string;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
         inbuf_dout : IN STD_LOGIC_VECTOR (32 downto 0);
-        inbuf_num_data_valid : IN STD_LOGIC_VECTOR (7 downto 0);
-        inbuf_fifo_cap : IN STD_LOGIC_VECTOR (7 downto 0);
+        inbuf_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+        inbuf_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
         inbuf_empty_n : IN STD_LOGIC;
         inbuf_read : OUT STD_LOGIC;
         m_axi_gmem0_AWVALID : OUT STD_LOGIC;
@@ -340,8 +340,8 @@ begin
         ap_idle => grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_ap_idle,
         ap_ready => grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_ap_ready,
         inbuf_dout => inbuf_dout,
-        inbuf_num_data_valid => ap_const_lv8_0,
-        inbuf_fifo_cap => ap_const_lv8_0,
+        inbuf_num_data_valid => ap_const_lv11_0,
+        inbuf_fifo_cap => ap_const_lv11_0,
         inbuf_empty_n => inbuf_empty_n,
         inbuf_read => grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_inbuf_read,
         m_axi_gmem0_AWVALID => grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_m_axi_gmem0_AWVALID,

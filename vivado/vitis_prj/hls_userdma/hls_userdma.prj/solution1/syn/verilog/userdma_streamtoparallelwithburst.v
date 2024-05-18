@@ -125,13 +125,13 @@ input   ap_continue;
 output   ap_idle;
 output   ap_ready;
 input  [32:0] inbuf_dout;
-input  [7:0] inbuf_num_data_valid;
-input  [7:0] inbuf_fifo_cap;
+input  [10:0] inbuf_num_data_valid;
+input  [10:0] inbuf_fifo_cap;
 input   inbuf_empty_n;
 output   inbuf_read;
 input  [31:0] incount47_dout;
-input  [3:0] incount47_num_data_valid;
-input  [3:0] incount47_fifo_cap;
+input  [6:0] incount47_num_data_valid;
+input  [6:0] incount47_fifo_cap;
 input   incount47_empty_n;
 output   incount47_read;
 input  [0:0] in_en_clrsts_dout;
@@ -357,8 +357,8 @@ userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2 grp_streamtoparallelw
     .ap_idle(grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_ap_idle),
     .ap_ready(grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_ap_ready),
     .inbuf_dout(inbuf_dout),
-    .inbuf_num_data_valid(8'd0),
-    .inbuf_fifo_cap(8'd0),
+    .inbuf_num_data_valid(11'd0),
+    .inbuf_fifo_cap(11'd0),
     .inbuf_empty_n(inbuf_empty_n),
     .inbuf_read(grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_inbuf_read),
     .m_axi_gmem0_AWVALID(grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_m_axi_gmem0_AWVALID),

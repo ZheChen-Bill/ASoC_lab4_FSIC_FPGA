@@ -31,13 +31,13 @@ port (
     s2m_err_ap_vld : OUT STD_LOGIC;
     in_Img_width : IN STD_LOGIC_VECTOR (31 downto 0);
     inbuf_din : OUT STD_LOGIC_VECTOR (32 downto 0);
-    inbuf_num_data_valid : IN STD_LOGIC_VECTOR (7 downto 0);
-    inbuf_fifo_cap : IN STD_LOGIC_VECTOR (7 downto 0);
+    inbuf_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+    inbuf_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
     inbuf_full_n : IN STD_LOGIC;
     inbuf_write : OUT STD_LOGIC;
     incount47_din : OUT STD_LOGIC_VECTOR (31 downto 0);
-    incount47_num_data_valid : IN STD_LOGIC_VECTOR (3 downto 0);
-    incount47_fifo_cap : IN STD_LOGIC_VECTOR (3 downto 0);
+    incount47_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
+    incount47_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
     incount47_full_n : IN STD_LOGIC;
     incount47_write : OUT STD_LOGIC;
     s2m_len_c_din : OUT STD_LOGIC_VECTOR (31 downto 0);
@@ -67,8 +67,8 @@ architecture behav of userdma_getinstream is
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv33_1FFFFFFFF : STD_LOGIC_VECTOR (32 downto 0) := "111111111111111111111111111111111";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
-    constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
-    constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
+    constant ap_const_lv7_0 : STD_LOGIC_VECTOR (6 downto 0) := "0000000";
 
 attribute shreg_extract : string;
     signal ap_done_reg : STD_LOGIC := '0';
@@ -154,13 +154,13 @@ attribute shreg_extract : string;
         ap_ready : OUT STD_LOGIC;
         inStreamTop_TVALID : IN STD_LOGIC;
         inbuf_din : OUT STD_LOGIC_VECTOR (32 downto 0);
-        inbuf_num_data_valid : IN STD_LOGIC_VECTOR (7 downto 0);
-        inbuf_fifo_cap : IN STD_LOGIC_VECTOR (7 downto 0);
+        inbuf_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+        inbuf_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
         inbuf_full_n : IN STD_LOGIC;
         inbuf_write : OUT STD_LOGIC;
         incount47_din : OUT STD_LOGIC_VECTOR (31 downto 0);
-        incount47_num_data_valid : IN STD_LOGIC_VECTOR (3 downto 0);
-        incount47_fifo_cap : IN STD_LOGIC_VECTOR (3 downto 0);
+        incount47_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
+        incount47_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
         incount47_full_n : IN STD_LOGIC;
         incount47_write : OUT STD_LOGIC;
         in_len_V_load : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -207,13 +207,13 @@ begin
         ap_ready => grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_ap_ready,
         inStreamTop_TVALID => inStreamTop_TVALID_int_regslice,
         inbuf_din => grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_inbuf_din,
-        inbuf_num_data_valid => ap_const_lv8_0,
-        inbuf_fifo_cap => ap_const_lv8_0,
+        inbuf_num_data_valid => ap_const_lv11_0,
+        inbuf_fifo_cap => ap_const_lv11_0,
         inbuf_full_n => inbuf_full_n,
         inbuf_write => grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_inbuf_write,
         incount47_din => grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_incount47_din,
-        incount47_num_data_valid => ap_const_lv4_0,
-        incount47_fifo_cap => ap_const_lv4_0,
+        incount47_num_data_valid => ap_const_lv7_0,
+        incount47_fifo_cap => ap_const_lv7_0,
         incount47_full_n => incount47_full_n,
         incount47_write => grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_incount47_write,
         in_len_V_load => in_len_V,

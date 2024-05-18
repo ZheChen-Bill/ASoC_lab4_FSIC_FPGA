@@ -73,13 +73,13 @@ output  [0:0] s2m_err;
 output   s2m_err_ap_vld;
 input  [31:0] in_Img_width;
 output  [32:0] inbuf_din;
-input  [7:0] inbuf_num_data_valid;
-input  [7:0] inbuf_fifo_cap;
+input  [10:0] inbuf_num_data_valid;
+input  [10:0] inbuf_fifo_cap;
 input   inbuf_full_n;
 output   inbuf_write;
 output  [31:0] incount47_din;
-input  [3:0] incount47_num_data_valid;
-input  [3:0] incount47_fifo_cap;
+input  [6:0] incount47_num_data_valid;
+input  [6:0] incount47_fifo_cap;
 input   incount47_full_n;
 output   incount47_write;
 output  [31:0] s2m_len_c_din;
@@ -189,13 +189,13 @@ userdma_getinstream_Pipeline_VITIS_LOOP_48_1 grp_getinstream_Pipeline_VITIS_LOOP
     .ap_ready(grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_ap_ready),
     .inStreamTop_TVALID(inStreamTop_TVALID_int_regslice),
     .inbuf_din(grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_inbuf_din),
-    .inbuf_num_data_valid(8'd0),
-    .inbuf_fifo_cap(8'd0),
+    .inbuf_num_data_valid(11'd0),
+    .inbuf_fifo_cap(11'd0),
     .inbuf_full_n(inbuf_full_n),
     .inbuf_write(grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_inbuf_write),
     .incount47_din(grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_incount47_din),
-    .incount47_num_data_valid(4'd0),
-    .incount47_fifo_cap(4'd0),
+    .incount47_num_data_valid(7'd0),
+    .incount47_fifo_cap(7'd0),
     .incount47_full_n(incount47_full_n),
     .incount47_write(grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_incount47_write),
     .in_len_V_load(in_len_V),
