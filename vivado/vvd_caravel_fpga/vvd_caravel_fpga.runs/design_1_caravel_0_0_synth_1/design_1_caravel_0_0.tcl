@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_caravel_0_0_synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/mref
@@ -87,7 +88,6 @@ set_property target_language Verilog [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
 set_property ip_repo_paths {
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/hls_caravel_ps
-  /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/userdma_fir
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/hls_output_pin
 } [current_project]
 update_ip_catalog
@@ -121,9 +121,11 @@ read_verilog -library xil_defaultlib {
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/axil_slav/rtl/axil_slav.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_mstr/rtl/axis_mstr.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_slav/rtl/axis_slav.v
+  /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/bram11.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/concat_EdgeDetect_Top_fsic.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/config_ctrl/rtl/config_ctrl.v
+  /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/fir.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/rtl/fsic.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/fsic_clkrst/rtl/fsic_clkrst.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/io_serdes/rtl/fsic_coreclk_phase_cnt.v
@@ -139,6 +141,7 @@ read_verilog -library xil_defaultlib {
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v
+  /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/multiplier_adder.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/spram.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/axis_switch/rtl/sw_caravel.v
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/user_prj0.v

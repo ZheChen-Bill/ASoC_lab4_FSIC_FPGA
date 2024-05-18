@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_caravel_ps_0_0_synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
@@ -86,7 +87,6 @@ set_property target_language Verilog [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
 set_property ip_repo_paths {
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/hls_caravel_ps
-  /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/userdma_fir
   /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/hls_output_pin
 } [current_project]
 update_ip_catalog

@@ -31,6 +31,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_bl
 # IP: bd/design_1/ip/design_1_caravel_0_0/design_1_caravel_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_caravel_0_0 || ORIG_REF_NAME==design_1_caravel_0_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_caravel_ps_0_0/design_1_caravel_ps_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_caravel_ps_0_0 || ORIG_REF_NAME==design_1_caravel_ps_0_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_clk_wiz_0_0 || ORIG_REF_NAME==design_1_clk_wiz_0_0} -quiet] -quiet
 
@@ -60,8 +63,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_sp
 
 # IP: bd/design_1/ip/design_1_userdma_0_0/design_1_userdma_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_userdma_0_0 || ORIG_REF_NAME==design_1_userdma_0_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_caravel_ps_0_0/design_1_caravel_ps_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_caravel_ps_0_0 || ORIG_REF_NAME==design_1_caravel_ps_0_0} -quiet] -quiet
 
 # XDC: /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/design_1_ooc.xdc

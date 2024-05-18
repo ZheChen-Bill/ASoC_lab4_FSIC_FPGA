@@ -29,6 +29,7 @@
       "axi_quad_spi_0": "",
       "blk_mem_gen_0": "",
       "caravel_0": "",
+      "caravel_ps_0": "",
       "clk_wiz_0": "",
       "output_pin_0": "",
       "processing_system7_0": "",
@@ -47,8 +48,7 @@
       "ps_axil_0": "",
       "rst_ps7_0_10M": "",
       "spiflash_0": "",
-      "userdma_0": "",
-      "caravel_ps_0": ""
+      "userdma_0": ""
     },
     "interface_ports": {
       "DDR_0": {
@@ -870,6 +870,12 @@
             "direction": "I"
           }
         }
+      },
+      "caravel_ps_0": {
+        "vlnv": "xilinx.com:hls:caravel_ps:0.0",
+        "xci_name": "design_1_caravel_ps_0_0",
+        "xci_path": "ip/design_1_caravel_ps_0_0/design_1_caravel_ps_0_0.xci",
+        "inst_hier_path": "caravel_ps_0"
       },
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
@@ -4794,12 +4800,6 @@
             }
           }
         }
-      },
-      "caravel_ps_0": {
-        "vlnv": "xilinx.com:hls:caravel_ps:0.0",
-        "xci_name": "design_1_caravel_ps_0_0",
-        "xci_path": "ip/design_1_caravel_ps_0_0/design_1_caravel_ps_0_0.xci",
-        "inst_hier_path": "caravel_ps_0"
       }
     },
     "interface_nets": {
@@ -4871,8 +4871,8 @@
       },
       "ps_axil_0_updma_so": {
         "interface_ports": [
-          "ps_axil_0/updma_so",
-          "userdma_0/inStreamTop"
+          "userdma_0/inStreamTop",
+          "ps_axil_0/updma_so"
         ]
       },
       "userdma_0_m_axi_gmem0": {
@@ -4958,6 +4958,7 @@
           "axi_quad_spi_0/ext_spi_clk",
           "axi_quad_spi_0/s_axi_aclk",
           "caravel_0/clock",
+          "caravel_ps_0/ap_clk",
           "output_pin_0/ap_clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "processing_system7_0/S_AXI_HP0_ACLK",
@@ -4978,8 +4979,7 @@
           "spiflash_0/ap_clk",
           "userdma_0/ap_clk",
           "axi_mem_intercon/S01_ACLK",
-          "axi_mem_intercon/S02_ACLK",
-          "caravel_ps_0/ap_clk"
+          "axi_mem_intercon/S02_ACLK"
         ]
       },
       "clk_wiz_0_clk_out2": {
@@ -5026,6 +5026,7 @@
           "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/S00_ARESETN",
           "axi_quad_spi_0/s_axi_aresetn",
+          "caravel_ps_0/ap_rst_n",
           "output_pin_0/ap_rst_n",
           "ps7_0_axi_periph/ARESETN",
           "ps7_0_axi_periph/M00_ARESETN",
@@ -5042,8 +5043,7 @@
           "ps_axil_0/axis_rst_n",
           "userdma_0/ap_rst_n",
           "axi_mem_intercon/S01_ARESETN",
-          "axi_mem_intercon/S02_ARESETN",
-          "caravel_ps_0/ap_rst_n"
+          "axi_mem_intercon/S02_ARESETN"
         ]
       },
       "rst_ps7_0_50M_peripheral_reset": {
