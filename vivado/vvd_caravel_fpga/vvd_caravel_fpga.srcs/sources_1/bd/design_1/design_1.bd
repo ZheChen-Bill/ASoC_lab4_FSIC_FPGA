@@ -4977,9 +4977,9 @@
           "ps_axil_0/axis_clk",
           "rst_ps7_0_10M/slowest_sync_clk",
           "spiflash_0/ap_clk",
-          "userdma_0/ap_clk",
           "axi_mem_intercon/S01_ACLK",
-          "axi_mem_intercon/S02_ACLK"
+          "axi_mem_intercon/S02_ACLK",
+          "userdma_0/ap_clk"
         ]
       },
       "clk_wiz_0_clk_out2": {
@@ -5041,9 +5041,9 @@
           "ps_axil_0/axi_reset_udso_n",
           "ps_axil_0/axi_reset_usdi_n",
           "ps_axil_0/axis_rst_n",
-          "userdma_0/ap_rst_n",
           "axi_mem_intercon/S01_ARESETN",
-          "axi_mem_intercon/S02_ARESETN"
+          "axi_mem_intercon/S02_ARESETN",
+          "userdma_0/ap_rst_n"
         ]
       },
       "rst_ps7_0_50M_peripheral_reset": {

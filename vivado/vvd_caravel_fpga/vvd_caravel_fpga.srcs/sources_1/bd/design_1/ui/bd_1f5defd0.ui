@@ -51,15 +51,15 @@ preplace netloc processing_system7_0_FIXED_IO 1 7 1 NJ 980
 preplace netloc processing_system7_0_M_AXI_GP0 1 3 5 1140 -30 NJ -30 NJ -30 NJ -30 2930
 preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 N 800
 preplace netloc ps7_0_axi_periph_M01_AXI 1 4 1 1480 820n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 4 2 1520 280 2070J
 preplace netloc ps7_0_axi_periph_M03_AXI 1 4 1 1560 380n
 preplace netloc ps7_0_axi_periph_M04_AXI 1 4 1 1500 360n
 preplace netloc ps7_0_axi_periph_M05_AXI 1 4 1 1510 120n
 preplace netloc ps_axil_0_ladma_mm 1 5 1 2050 480n
-preplace netloc userdma_0_outStreamTop 1 4 3 1600 30 N 30 2470
 preplace netloc ps_axil_0_updma_so 1 5 1 2060 460n
 preplace netloc userdma_0_m_axi_gmem0 1 5 2 2080 480 2460
 preplace netloc userdma_0_m_axi_gmem1 1 5 2 2090 660 2460
-preplace netloc ps7_0_axi_periph_M02_AXI 1 4 2 1520 280 2070J
+preplace netloc userdma_0_outStreamTop 1 4 3 1600 30 N 30 2470
 levelinfo -pg 1 -80 130 430 860 1330 1830 2280 2690 2950
 pagesize -pg 1 -db -bbox -sgen -80 -40 3080 1140
 "

@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-// Date        : Sat May 18 14:36:16 2024
+// Date        : Sat May 18 14:36:15 2024
 // Host        : ubuntu2004 running 64-bit Ubuntu 20.04.4 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_us_1 -prefix
+//               design_1_auto_us_1_ design_1_auto_us_1_stub.v
 // Design      : design_1_auto_us_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
