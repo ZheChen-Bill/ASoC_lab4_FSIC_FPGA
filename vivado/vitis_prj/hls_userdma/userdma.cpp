@@ -31,11 +31,11 @@ void streamtoparallelwithburst(hls::stream<data> &in_stream, hls::stream<int> &i
 		  buf_sts=0; // added
 		  if(final_s2m_len == in_s2m_len){
 			  out_sts = 1;
-			  buf_sts=1; // added
+			  //buf_sts=1; // added
 		  }
 
-		  //buf_sts = out_sts; // modified
-	  } while(final_s2m_len < BUF_LEN);
+		  buf_sts = out_sts; // modified
+	  } while(final_s2m_len < in_s2m_len);
   }
 }
 

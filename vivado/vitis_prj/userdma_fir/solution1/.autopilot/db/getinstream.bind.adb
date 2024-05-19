@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701470831</coreId>
+						<coreId>3137129904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338269360</coreId>
+						<coreId>1397508187</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3621216858</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544433253</coreId>
+						<coreId>1701080942</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1497583173</coreId>
+						<coreId>3137369912</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -286,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338691088</coreId>
+						<coreId>3136669440</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -394,7 +394,7 @@
 						<coreName>FIFO_SRL</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338790392</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -430,7 +430,7 @@
 						<coreName>FIFO_SRL</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3137467760</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -470,7 +470,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>115</coreId>
+						<coreId>1948283745</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -513,7 +513,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3137489888</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -556,7 +556,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338709808</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -668,10 +668,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>br_ln47</name>
+						<name>br_ln49</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>getinstream</contextFuncName>
 						<contextNormFuncName>getinstream</contextNormFuncName>
 						<inlineStackInfo>
@@ -687,7 +687,7 @@
 											<first>hls_userdma/userdma.cpp</first>
 											<second>getinstream</second>
 										</first>
-										<second>47</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -700,7 +700,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338791840</coreId>
+						<coreId>3136483264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -758,7 +758,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338792896</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -782,10 +782,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>add_ln48</name>
+						<name>add_ln50</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>getinstream</contextFuncName>
 						<contextNormFuncName>getinstream</contextNormFuncName>
 						<inlineStackInfo>
@@ -801,7 +801,7 @@
 											<first>hls_userdma/userdma.cpp</first>
 											<second>getinstream</second>
 										</first>
-										<second>48</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -842,7 +842,7 @@
 						<name>empty</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>getinstream</contextFuncName>
 						<contextNormFuncName>getinstream</contextNormFuncName>
 						<inlineStackInfo>
@@ -858,7 +858,7 @@
 											<first>hls_userdma/userdma.cpp</first>
 											<second>getinstream</second>
 										</first>
-										<second>48</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -899,7 +899,7 @@
 						<name>umax</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>getinstream</contextFuncName>
 						<contextNormFuncName>getinstream</contextNormFuncName>
 						<inlineStackInfo>
@@ -915,7 +915,7 @@
 											<first>hls_userdma/userdma.cpp</first>
 											<second>getinstream</second>
 										</first>
-										<second>48</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -972,7 +972,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338837664</coreId>
+						<coreId>3137467760</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1081,7 +1081,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338837664</coreId>
+						<coreId>3137329888</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1221,10 +1221,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>xor_ln58</name>
+						<name>xor_ln60</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>getinstream</contextFuncName>
 						<contextNormFuncName>getinstream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1240,7 +1240,7 @@
 											<first>hls_userdma/userdma.cpp</first>
 											<second>getinstream</second>
 										</first>
-										<second>58</second>
+										<second>60</second>
 									</item>
 								</second>
 							</item>
@@ -1278,10 +1278,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>s2m_err_write_ln59</name>
+						<name>s2m_err_write_ln61</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>getinstream</contextFuncName>
 						<contextNormFuncName>getinstream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1297,7 +1297,7 @@
 											<first>hls_userdma/userdma.cpp</first>
 											<second>getinstream</second>
 										</first>
-										<second>59</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -1369,7 +1369,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3137451840</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1395,120 +1395,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>br_ln78</name>
-						<fileName>hls_userdma/userdma.cpp</fileName>
-						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>78</lineNumber>
-						<contextFuncName>getinstream</contextFuncName>
-						<contextNormFuncName>getinstream</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>hls_userdma/userdma.cpp</first>
-											<second>getinstream</second>
-										</first>
-										<second>78</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>3338722320</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>104</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_32">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>40</id>
-						<name>in_len_V_write_ln79</name>
-						<fileName>hls_userdma/userdma.cpp</fileName>
-						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>79</lineNumber>
-						<contextFuncName>getinstream</contextFuncName>
-						<contextNormFuncName>getinstream</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>hls_userdma/userdma.cpp</first>
-											<second>getinstream</second>
-										</first>
-										<second>79</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>106</item>
-					<item>107</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.58</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_33">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>41</id>
-						<name>s2m_err_write_ln80</name>
+						<name>br_ln80</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
 						<lineNumber>80</lineNumber>
@@ -1540,7 +1427,120 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338722320</coreId>
+						<coreId>3137329888</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>104</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>22</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_32">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>40</id>
+						<name>in_len_V_write_ln81</name>
+						<fileName>hls_userdma/userdma.cpp</fileName>
+						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
+						<lineNumber>81</lineNumber>
+						<contextFuncName>getinstream</contextFuncName>
+						<contextNormFuncName>getinstream</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>hls_userdma/userdma.cpp</first>
+											<second>getinstream</second>
+										</first>
+										<second>81</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>3137449008</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>106</item>
+					<item>107</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.58</m_delay>
+				<m_topoIndex>13</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_33">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>41</id>
+						<name>s2m_err_write_ln82</name>
+						<fileName>hls_userdma/userdma.cpp</fileName>
+						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
+						<lineNumber>82</lineNumber>
+						<contextFuncName>getinstream</contextFuncName>
+						<contextNormFuncName>getinstream</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>hls_userdma/userdma.cpp</first>
+											<second>getinstream</second>
+										</first>
+										<second>82</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>3136483264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1584,7 +1584,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338817936</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1608,10 +1608,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>_ln82</name>
+						<name>_ln84</name>
 						<fileName>hls_userdma/userdma.cpp</fileName>
 						<fileDirectory>/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj</fileDirectory>
-						<lineNumber>82</lineNumber>
+						<lineNumber>84</lineNumber>
 						<contextFuncName>getinstream</contextFuncName>
 						<contextNormFuncName>getinstream</contextNormFuncName>
 						<inlineStackInfo>
@@ -1627,7 +1627,7 @@
 											<first>hls_userdma/userdma.cpp</first>
 											<second>getinstream</second>
 										</first>
-										<second>82</second>
+										<second>84</second>
 									</item>
 								</second>
 							</item>
@@ -1640,7 +1640,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338722320</coreId>
+						<coreId>3137366136</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1685,7 +1685,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338798432</coreId>
+						<coreId>7955819</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1716,7 +1716,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338722320</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1729,7 +1729,7 @@
 					<Obj>
 						<type>2</type>
 						<id>76</id>
-						<name>getinstream_Pipeline_VITIS_LOOP_48_1</name>
+						<name>getinstream_Pipeline_VITIS_LOOP_50_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1747,13 +1747,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508187</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:getinstream_Pipeline_VITIS_LOOP_48_1&gt;</content>
+				<content>&lt;constant:getinstream_Pipeline_VITIS_LOOP_50_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_39">
 				<Value>
@@ -1778,7 +1778,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338116640</coreId>
+						<coreId>3136564384</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1809,7 +1809,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3338938256</coreId>
+						<coreId>3137341120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1874,7 +1874,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1634560372</coreId>
+					<coreId>64</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1892,7 +1892,7 @@
 				<Obj>
 					<type>3</type>
 					<id>39</id>
-					<name>VITIS_LOOP_48_1</name>
+					<name>VITIS_LOOP_50_1</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1910,7 +1910,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>784</coreId>
+					<coreId>808598902</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1953,7 +1953,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>3137448728</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1986,7 +1986,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>176</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2992,7 +2992,7 @@
 		<count>7</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>add_ln48_fu_139</first>
+			<first>add_ln50_fu_139</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3040,7 +3040,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln58_fu_186</first>
+			<first>xor_ln60_fu_186</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3052,7 +3052,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_112</first>
+			<first>grp_getinstream_Pipeline_VITIS_LOOP_50_1_fu_112</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3098,7 +3098,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln79_store_fu_159</first>
+			<first>store_ln81_store_fu_159</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

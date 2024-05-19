@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716049464775">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716104163422">
   <ports id="1" name="gmem0" type="PortType" coreId="3621216858" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="2" name="gmem1" type="PortType" coreId="3341789840" bitwidth="32" iftype="IfTypeFifo">
+  <ports id="2" name="gmem1" type="PortType" coreId="3140333152" bitwidth="32" iftype="IfTypeFifo">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="3" name="inStreamTop_V_data_V" type="PortType" originalName="inStreamTop" coreId="3341003376" bitwidth="32">
+  <ports id="3" name="inStreamTop_V_data_V" type="PortType" originalName="inStreamTop" coreId="3293496976" bitwidth="32">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="4" name="inStreamTop_V_keep_V" type="PortType" originalName="inStreamTop" coreId="3494234400" bitwidth="4">
+  <ports id="4" name="inStreamTop_V_keep_V" type="PortType" originalName="inStreamTop" coreId="64" bitwidth="4">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="5" name="inStreamTop_V_strb_V" type="PortType" originalName="inStreamTop" coreId="64" bitwidth="4">
+  <ports id="5" name="inStreamTop_V_strb_V" type="PortType" originalName="inStreamTop" coreId="54" bitwidth="4">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
   <ports id="6" name="inStreamTop_V_user_V" type="PortType" originalName="inStreamTop" coreId="54" bitwidth="7">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="inStreamTop_V_last_V" type="PortType" originalName="inStreamTop" coreId="3342453696" bitwidth="1">
+  <ports id="7" name="inStreamTop_V_last_V" type="PortType" originalName="inStreamTop" coreId="42" bitwidth="1">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="8" name="s2m_buf_sts" type="PortType" originalName="s2m_buf_sts" coreId="45" bitwidth="1" direction="DirOut">
+  <ports id="8" name="s2m_buf_sts" type="PortType" originalName="s2m_buf_sts" coreId="3140509072" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="9" name="s2m_sts_clear" type="PortType" originalName="s2m_sts_clear" coreId="3342146224" bitwidth="1">
+  <ports id="9" name="s2m_sts_clear" type="PortType" originalName="s2m_sts_clear" coreId="41" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="10" name="s2m_len" type="PortType" originalName="s2m_len" coreId="3342454384" bitwidth="32">
+  <ports id="10" name="s2m_len" type="PortType" originalName="s2m_len" coreId="3140508608" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="11" name="s2m_enb_clrsts" type="PortType" originalName="s2m_enb_clrsts" coreId="39" bitwidth="1">
+  <ports id="11" name="s2m_enb_clrsts" type="PortType" originalName="s2m_enb_clrsts" coreId="3140529424" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="12" name="s2mbuf" type="PortType" coreId="34" bitwidth="64">
+  <ports id="12" name="s2mbuf" type="PortType" coreId="47" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="13" name="s2m_err" type="PortType" originalName="s2m_err" coreId="3342385232" bitwidth="1" direction="DirOut">
+  <ports id="13" name="s2m_err" type="PortType" originalName="s2m_err" coreId="8" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="14" name="Img_width" type="PortType" originalName="Img_width" coreId="0" bitwidth="32"/>
+  <ports id="14" name="Img_width" type="PortType" originalName="Img_width" coreId="32" bitwidth="32"/>
   <ports id="15" name="m2sbuf" type="PortType" coreId="0" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="16" name="m2s_buf_sts" type="PortType" originalName="m2s_buf_sts" coreId="3342456288" bitwidth="1" direction="DirOut">
+  <ports id="16" name="m2s_buf_sts" type="PortType" originalName="m2s_buf_sts" coreId="0" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="17" name="m2s_sts_clear" type="PortType" originalName="m2s_sts_clear" coreId="40" bitwidth="1">
+  <ports id="17" name="m2s_sts_clear" type="PortType" originalName="m2s_sts_clear" coreId="0" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="18" name="m2s_len" type="PortType" originalName="m2s_len" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="19" name="m2s_enb_clrsts" type="PortType" originalName="m2s_enb_clrsts" coreId="0" bitwidth="1">
+  <ports id="19" name="m2s_enb_clrsts" type="PortType" originalName="m2s_enb_clrsts" coreId="3140520840" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="20" name="outStreamTop_V_data_V" type="PortType" originalName="outStreamTop" coreId="0" bitwidth="32" direction="DirOut">
+  <ports id="20" name="outStreamTop_V_data_V" type="PortType" originalName="outStreamTop" coreId="3140519488" bitwidth="32" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="21" name="outStreamTop_V_keep_V" type="PortType" originalName="outStreamTop" coreId="0" bitwidth="4" direction="DirOut">
+  <ports id="21" name="outStreamTop_V_keep_V" type="PortType" originalName="outStreamTop" coreId="3140520208" bitwidth="4" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="22" name="outStreamTop_V_strb_V" type="PortType" originalName="outStreamTop" coreId="3342420032" bitwidth="4" direction="DirOut">
+  <ports id="22" name="outStreamTop_V_strb_V" type="PortType" originalName="outStreamTop" coreId="3140521040" bitwidth="4" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="23" name="outStreamTop_V_user_V" type="PortType" originalName="outStreamTop" coreId="3342453376" bitwidth="7" direction="DirOut">
+  <ports id="23" name="outStreamTop_V_user_V" type="PortType" originalName="outStreamTop" coreId="0" bitwidth="7" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="24" name="outStreamTop_V_last_V" type="PortType" originalName="outStreamTop" coreId="3342452336" bitwidth="1" direction="DirOut">
+  <ports id="24" name="outStreamTop_V_last_V" type="PortType" originalName="outStreamTop" coreId="48" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
   <edges id="130" source_obj="//@ports.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
@@ -133,78 +133,78 @@
   <edges id="1160" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
   <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="378" RegionName="userdma">
     <basic_blocks id="127" name="userdma" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="m2s_enb_clrsts_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="m2s_enb_clrsts_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>m2s_enb_clrsts</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="m2s_len_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="m2s_len_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>m2s_len</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="m2s_sts_clear_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="13" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="m2s_sts_clear_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>m2s_sts_clear</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="m2sbuf_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="14" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="m2sbuf_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>m2sbuf</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="s2mbuf_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="s2mbuf_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>s2mbuf</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="s2m_enb_clrsts_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="16" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="s2m_enb_clrsts_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>s2m_enb_clrsts</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="s2m_len_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="17" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="s2m_len_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>s2m_len</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="s2m_sts_clear_read" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="18" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="s2m_sts_clear_read" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="userdma" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>s2m_sts_clear</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="m2s_enb_clrsts_c" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="m2s_enb_clrsts_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="m2s_enb_clrsts_c" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="m2s_enb_clrsts_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="m2s_sts_clear_c" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="m2s_sts_clear_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="m2s_sts_clear_c" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="m2s_sts_clear_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="s2mbuf_c" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2mbuf_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="s2mbuf_c" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2mbuf_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="s2m_enb_clrsts_c" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2m_enb_clrsts_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="s2m_enb_clrsts_c" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2m_enb_clrsts_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="s2m_len_c" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2m_len_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="s2m_len_c" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2m_len_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="s2m_sts_clear_c" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2m_sts_clear_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="s2m_sts_clear_c" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="s2m_sts_clear_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="userdma" bitwidth="1" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
@@ -214,8 +214,8 @@
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="incount" lineNumber="202" originalName="incount" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="incount_U" coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="userdma" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="202" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="incount" lineNumber="204" originalName="incount" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="incount_U" coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="userdma" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="204" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
@@ -225,14 +225,14 @@
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="outcount" lineNumber="204" originalName="outcount" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="outcount_U" coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="userdma" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="204" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="outcount" lineNumber="206" originalName="outcount" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="outcount_U" coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="userdma" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="206" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="_ln199" lineNumber="199" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="entry_proc_U0" coreId="320" contextFuncName="userdma" opcode="call" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="19" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="199" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="_ln201" lineNumber="201" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="entry_proc_U0" coreId="0" contextFuncName="userdma" opcode="call" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="201" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
@@ -241,8 +241,8 @@
         <dataInputObjs>alloca</dataInputObjs>
         <constName>entry_proc</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="_ln206" lineNumber="206" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="getinstream_U0" coreId="3342450160" contextFuncName="userdma" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.63" m_topoIndex="20" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="206" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="_ln208" lineNumber="208" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="getinstream_U0" coreId="3139478256" contextFuncName="userdma" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.63" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="208" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>inStreamTop_V_data_V</dataInputObjs>
         <dataInputObjs>inStreamTop_V_keep_V</dataInputObjs>
         <dataInputObjs>inStreamTop_V_strb_V</dataInputObjs>
@@ -257,8 +257,8 @@
         <dataOutputObjs>s2m_err</dataOutputObjs>
         <constName>getinstream</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="_ln207" lineNumber="207" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="streamtoparallelwithburst_U0" coreId="3341907280" contextFuncName="userdma" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="207" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="_ln209" lineNumber="209" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="streamtoparallelwithburst_U0" coreId="0" contextFuncName="userdma" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="209" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
@@ -269,8 +269,8 @@
         <dataOutputObjs>gmem0</dataOutputObjs>
         <constName>streamtoparallelwithburst</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="_ln208" lineNumber="208" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="paralleltostreamwithburst_U0" coreId="3342451504" contextFuncName="userdma" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.63" m_topoIndex="21" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="208" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="_ln210" lineNumber="210" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="paralleltostreamwithburst_U0" coreId="3140583000" contextFuncName="userdma" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.63" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="210" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>gmem1</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
@@ -280,8 +280,8 @@
         <dataInputObjs>alloca</dataInputObjs>
         <constName>paralleltostreamwithburst</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="_ln209" lineNumber="209" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="sendoutstream_U0" coreId="1" contextFuncName="userdma" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="209" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="_ln211" lineNumber="211" fileName="hls_userdma/userdma.cpp" fileDirectory=".." rtlName="sendoutstream_U0" coreId="1702258035" contextFuncName="userdma" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="211" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
@@ -294,18 +294,18 @@
         <dataOutputObjs>outStreamTop_V_last_V</dataOutputObjs>
         <constName>sendoutstream</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="_ln211" lineNumber="211" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="3341781808" contextFuncName="userdma" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="211" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="_ln213" lineNumber="213" fileName="hls_userdma/userdma.cpp" fileDirectory=".." coreId="0" contextFuncName="userdma" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls_userdma/userdma.cpp" linenumber="213" fileDirectory="/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj" functionName="userdma"/>
       </node_objs>
       <fileValidLineNumbers fileName="hls_userdma/userdma.cpp">
-        <validLinenumbers>199</validLinenumbers>
-        <validLinenumbers>202</validLinenumbers>
+        <validLinenumbers>201</validLinenumbers>
         <validLinenumbers>204</validLinenumbers>
         <validLinenumbers>206</validLinenumbers>
-        <validLinenumbers>207</validLinenumbers>
         <validLinenumbers>208</validLinenumbers>
         <validLinenumbers>209</validLinenumbers>
+        <validLinenumbers>210</validLinenumbers>
         <validLinenumbers>211</validLinenumbers>
+        <validLinenumbers>213</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -396,14 +396,14 @@
   <moduleNodes realName="grp_sendoutstream_fu_342">
     <nodeIds>125</nodeIds>
   </moduleNodes>
+  <moduleNodes realName="call_ln201_entry_proc_fu_266">
+    <nodeIds>121</nodeIds>
+  </moduleNodes>
   <moduleNodes realName="grp_paralleltostreamwithburst_fu_305">
     <nodeIds>124</nodeIds>
   </moduleNodes>
   <moduleNodes realName="grp_streamtoparallelwithburst_fu_324">
     <nodeIds>123</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="call_ln199_entry_proc_fu_266">
-    <nodeIds>121</nodeIds>
   </moduleNodes>
   <ioNodes realName="s2m_len_read_read_fu_254">
     <nodeIds>36</nodeIds>

@@ -6349,12 +6349,14 @@ void streamtoparallelwithburst(hls::stream<data> &in_stream, hls::stream<int> &i
     out_memory += count;
     final_s2m_len += count;
 
+    buf_sts=0;
     if(final_s2m_len == in_s2m_len){
      out_sts = 1;
+
     }
 
     buf_sts = out_sts;
-   } while(final_s2m_len < 64);
+   } while(final_s2m_len < in_s2m_len);
   }
 }
 
@@ -6366,7 +6368,7 @@ void getinstream(hls::stream<trans_pkt >& in_stream, ap_uint<1> in_en_clrsts, ap
       trans_pkt in_val;
       static int width_count = 0;
       if(!in_en_clrsts){
-       VITIS_LOOP_48_1: do {
+       VITIS_LOOP_50_1: do {
 #pragma HLS PIPELINE
  in_val = in_stream.read();
      data out_val = {in_val.data, in_val.last};
@@ -6378,7 +6380,7 @@ void getinstream(hls::stream<trans_pkt >& in_stream, ap_uint<1> in_en_clrsts, ap
     s2m_err=1;
      if((in_len!=0)&&(in_val.user(2,2)==1))
     s2m_err=1;
-# 71 "hls_userdma/userdma.cpp"
+# 73 "hls_userdma/userdma.cpp"
      count++;
      in_len++;
      if (count >= MAX_BURST_LENGTH) {
@@ -6408,7 +6410,7 @@ void paralleltostreamwithburst(ap_uint<32> *in_memory, ap_uint<1> in_en_clrsts, 
     m2s_len = in_m2s_len;
     first = 0;
    }
-   VITIS_LOOP_100_1: do {
+   VITIS_LOOP_102_1: do {
       if(m2s_len > MAX_BURST_LENGTH){
      count = MAX_BURST_LENGTH;
     }else{
@@ -6416,7 +6418,7 @@ void paralleltostreamwithburst(ap_uint<32> *in_memory, ap_uint<1> in_en_clrsts, 
      first = 1;
     }
 
-    VITIS_LOOP_108_2: for (int i = 0; i < count; ++i) {
+    VITIS_LOOP_110_2: for (int i = 0; i < count; ++i) {
 #pragma HLS PIPELINE
  out_val.data_filed = in_memory[i];
      out_val.upsb = 0;
@@ -6427,7 +6429,7 @@ void paralleltostreamwithburst(ap_uint<32> *in_memory, ap_uint<1> in_en_clrsts, 
 
      if(m2s_len == in_m2s_len)
       out_val.upsb(2,2) = 1;
-# 128 "hls_userdma/userdma.cpp"
+# 130 "hls_userdma/userdma.cpp"
      out_stream.write(out_val);
      m2s_len--;
     }
@@ -6450,9 +6452,9 @@ void sendoutstream(hls::stream<out_data> &in_stream, hls::stream<int> &in_counts
         buf_sts = 0;
 
       } else {
-    VITIS_LOOP_150_1: do {
+    VITIS_LOOP_152_1: do {
      count = in_counts.read();
-     VITIS_LOOP_152_2: for (int i = 0; i < count; ++i) {
+     VITIS_LOOP_154_2: for (int i = 0; i < count; ++i) {
 #pragma HLS PIPELINE
  out_data in_data = in_stream.read();
       out_val.data = in_data.data_filed;
@@ -6483,11 +6485,11 @@ __attribute__((sdx_kernel("userdma", 0))) void userdma(hls::stream<trans_pkt >& 
   hls::stream<trans_pkt >& outStreamTop) {
 #line 16 "/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/userdma_fir/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=userdma
-# 180 "hls_userdma/userdma.cpp"
+# 182 "hls_userdma/userdma.cpp"
 
 #line 6 "/home/ubuntu/SoC_Design/homework/ASoC_lab4_FSIC_FPGA/vivado/vitis_prj/userdma_fir/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=userdma
-# 180 "hls_userdma/userdma.cpp"
+# 182 "hls_userdma/userdma.cpp"
 
 #pragma HLS INTERFACE axis register_mode=both register port=inStreamTop
 #pragma HLS INTERFACE m_axi max_write_burst_length=64 latency=10 depth=1024 bundle=gmem0 port=s2mbuf offset = slave

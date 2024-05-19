@@ -32,7 +32,7 @@
 <Interval-max>undef</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_100_1>
+<VITIS_LOOP_102_1>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
@@ -44,7 +44,7 @@
 </IterationLatency>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_100_1>
+</VITIS_LOOP_102_1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
