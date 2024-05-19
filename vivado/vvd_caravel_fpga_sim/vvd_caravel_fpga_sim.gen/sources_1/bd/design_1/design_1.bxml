@@ -2,17 +2,10 @@
 <Root MajorVersion="0" MinorVersion="40">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-<<<<<<< HEAD
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1716045404"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1716045404"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1716045409"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1716045409"/>
-=======
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1716050776"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1716050776"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1716050781"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1716050781"/>
->>>>>>> 77c5084fcb76b911115f01f83df3f386758c90aa
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1716104289"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1716104289"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1716104295"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1716104295"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth/design_1.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

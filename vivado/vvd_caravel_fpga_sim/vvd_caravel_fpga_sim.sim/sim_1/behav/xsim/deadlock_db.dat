@@ -1,8 +1,0 @@
-Dependence_Cycle_ID 1
-Dependence_Process_ID 1
-Dependence_Process_path userdma_userdma.streamtoparallelwithburst_U0
-Dependence_Channel_path userdma_userdma.incount_U
-Dependence_Channel_status EMPTY
-Dependence_Process_ID 2
-Dependence_Process_path userdma_userdma.getinstream_U0
-Dependence_Cycle_Number 1
